@@ -1,0 +1,8 @@
+method = GET
+path = /
+Query = 
+
+method = GET
+path = /favicon.ico
+Query = 
+

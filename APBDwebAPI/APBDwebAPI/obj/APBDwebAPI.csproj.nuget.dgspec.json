@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\oski_\\Desktop\\APBDwebAPI\\APBDwebAPI\\APBDwebAPI.csproj": {}
+    "C:\\Users\\oski_\\Desktop\\Cw6\\APBDwebAPI\\APBDwebAPI\\APBDwebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\oski_\\Desktop\\APBDwebAPI\\APBDwebAPI\\APBDwebAPI.csproj": {
+    "C:\\Users\\oski_\\Desktop\\Cw6\\APBDwebAPI\\APBDwebAPI\\APBDwebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oski_\\Desktop\\APBDwebAPI\\APBDwebAPI\\APBDwebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\oski_\\Desktop\\Cw6\\APBDwebAPI\\APBDwebAPI\\APBDwebAPI.csproj",
         "projectName": "APBDwebAPI",
-        "projectPath": "C:\\Users\\oski_\\Desktop\\APBDwebAPI\\APBDwebAPI\\APBDwebAPI.csproj",
+        "projectPath": "C:\\Users\\oski_\\Desktop\\Cw6\\APBDwebAPI\\APBDwebAPI\\APBDwebAPI.csproj",
         "packagesPath": "C:\\Users\\oski_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oski_\\Desktop\\APBDwebAPI\\APBDwebAPI\\obj\\",
+        "outputPath": "C:\\Users\\oski_\\Desktop\\Cw6\\APBDwebAPI\\APBDwebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\oski_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,9 +38,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             }
           },
           "imports": [

@@ -4,13 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using APBDwebAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace APBDwebAPI.DAL
 {
     public class DBServiceMS : IDbService
     {
 
-
+        [Authorize(Roles = "Employee")]
         public Enrollment EnrollStudent(Student student)
         {
             using (var polaczenie = new SqlConnection("Data Source=db-mssql;Initial Catalog=s18734;Integrated Security=True"))
@@ -122,6 +123,7 @@ namespace APBDwebAPI.DAL
             return null;
         }
 
+        [Authorize(Roles = "Employee")]
         public Enrollment PromoteStudent(Promotion promotion)
         {
             using (var polaczenie = new SqlConnection("Data Source=db-mssql;Initial Catalog=s18734;Integrated Security=True"))
